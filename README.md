@@ -73,6 +73,14 @@ pam3, Fr3 = sn.read('RUIDO_3.wav')
 audio_mezclado = pim_recortado + pum_recortado + pam_recortado
 ```
 
+### Paso 3: Aplicar el ICA
+
+```
+# Aplicación de ICA
+ica = FastICA(n_components=3)
+sources = ica.fit_transform(audio_mezclado.reshape(-1, 1))
+```
+
 
  	
 ## Guía de instalación
