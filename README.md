@@ -1,10 +1,18 @@
 
 <h1 align="center">AISLAMIENTO DE VOZ ESPECIFICA EN AUDIO MIXTO</h1>
+
 <p align="center"> Problema:  Fiesta de cóctel</p>
 <br />
 <div align="center">
  <img src="FIESTA.jpg" alt="Fiesta" width="300" height="300">
 </div>
+
+En un evento tipo coctel, se instalaron varios micrófonos para escuchar lo que
+las personas estaban hablando; una vez terminó la fiesta, se solicitó a los
+ingenieros que entregaran el audio de la voz de uno de los participantes.
+Los ingenieros analizaron las señales grabadas por los micrófonos eran mezclas
+de señales que provenían de diferentes fuentes (personas) para todos los casos
+y se encontraron con el problema de aislar la voz de interés.
 
 <br />
 <div align="center">
