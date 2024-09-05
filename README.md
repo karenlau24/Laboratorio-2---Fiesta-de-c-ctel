@@ -246,7 +246,20 @@ La gráfica de la voz filtrada es la siguiente:
 ## Resultados
 ---
 
-> Blockquotes
+> SNR
+
+Al momento de realizar el cálculo de las señales con sus respectivos ruidos, los resultados obtenidos fueron los siguientes: 
+
+```
+El SNR entre la señal de audio 1 y el ruido 1 es: 32.80 dB
+El SNR entre la señal de audio 2 y el ruido 2 es: 44.29 dB
+El SNR entre la señal de audio 3 y el ruido 3 es: 27.14 dB
+El SNR entre Vocecita y el ruido 1 es: 33.48 dB
+El SNR entre Vocecita y el ruido 2 es: 48.81 dB
+El SNR entre Vocecita y el ruido 3 es: 31.89 dB
+```
+
+
 
 Paso a paso de cómo instalar la herramienta digital. En esta sección es recomendable explicar la arquitectura de carpetas y módulos que componen el sistema.
 
