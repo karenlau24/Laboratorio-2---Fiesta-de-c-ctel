@@ -50,7 +50,7 @@ Se implementó un montaje en el que se utilizaron tres micrófonos con una frecu
 
 
 
-## Guía de usuario
+## Procesamiento
 ---
 Explica los pasos básicos sobre cómo usar la herramienta digital. Es una buena sección para mostrar capturas de pantalla o gifs que ayuden a entender la herramienta digital.
  	
