@@ -15,18 +15,13 @@ Los ingenieros analizaron las señales grabadas por los micrófonos eran mezclas
 de señales que provenían de diferentes fuentes (personas) para todos los casos
 y se encontraron con el problema de aislar la voz de interés.
 
-<br />
-<div align="center">
- <img src="MONTAJE.jpeg" alt="Montaje" width="250" height="250">
-</div>
-
 
 
 ## Tabla de contenidos:
 ---
 
 - [OBJETIVO](#objetivo)
-- [Descripción y contexto](#descripción-y-contexto)
+- [MONTAJE](#montaje)
 - [Guía de usuario](#guía-de-usuario)
 - [Guía de instalación](#guía-de-instalación)
 - [Cómo contribuir](#cómo-contribuir)
@@ -40,31 +35,21 @@ y se encontraron con el problema de aislar la voz de interés.
 ---
 En este trabajo, se propuso abordar el desafiante problema de la 'fiesta de cóctel'. Simulando un escenario real, se configuró un arreglo de múltiples micrófonos para capturar simultáneamente las señales de varias fuentes sonoras. Al igual que en una reunión social, las grabaciones resultantes fueron una mezcla compleja de voces superpuestas, representando el típico desafío de aislar una señal de interés en un entorno acústicamente ruidoso. El objetivo principal fue desarrollar y evaluar técnicas de procesamiento de señales para abordar este problema, explorando algoritmos de separación de fuentes que permitieran aislar la voz de una persona específica a partir de una mezcla de múltiples hablantes. A través de este experimento, se buscó comprender los desafíos inherentes a la separación de fuentes y evaluar la eficacia de diferentes enfoques para resolver el problema de la 'fiesta de cóctel'.
 
-### Ejemplos de badges
 
-- code coverage percentage: ![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
-- stable release version: ![version](https://img.shields.io/badge/version-1.2.3-blue)
-- package manager release: ![gem](https://img.shields.io/badge/gem-2.2.0-blue)
-- status of third-party dependencies: ![dependencies](https://img.shields.io/badge/dependencies-out%20of%20date-orange)
-- static code analysis grade: ![codacy](https://img.shields.io/badge/codacy-B-green)
-- [SemVer](https://semver.org/) version observance: ![semver](https://img.shields.io/badge/semver-2.0.0-blue)
-- amount of [Liberapay](https://liberapay.com/) donations per week: ![receives](https://img.shields.io/badge/receives-2.00%20USD%2Fweek-yellow)
-- Python package downloads: ![downloads](https://img.shields.io/badge/downloads-13k%2Fmonth-brightgreen)
-- Chrome Web Store extension rating: ![rating](https://img.shields.io/badge/rating-★★★★☆-brightgreen)
-- [Uptime Robot](https://uptimerobot.com) percentage: ![uptime](https://img.shields.io/badge/uptime-100%25-brightgreen)
 
-### Badges que solicitamos:
+
+
+## Montaje
 ---
-En la iniciativa Código para el Desarrollo solicitamos a los equipos que suman sus herramientas al catálogo de sumar el badge generado por el uso del microservicio de evaluación estática de código SonarCloud.
+Se implementó un montaje en el que se utilizaron tres micrófonos con una frecuencia de muestreo de 44 kHz, asegurada por la aplicación RecForge II. Las tres personas encargadas de emitir las voces se ubicaron en sillas a diferentes distancias respecto a los micrófonos, que estuvieron colocados en el mismo punto. Como primer paso, se realizó una grabación del ruido ambiente, que fue mínimo gracias a que el experimento se llevó a cabo en un cuarto insonorizado, cuyo objetivo es minimizar la reflexión del sonido. Después, cada persona recitó un trabalenguas, el cual fue captado por los micrófonos. 
 
-El badge se ve así y redirige al reporte de evaluación estática del último commit de la herramienta:
+<br />
+<div align="center">
+ <img src="MONTAJE.jpeg" alt="Montaje" width="250" height="250">
+</div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Plantilla-de-repositorio&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_Plantilla-de-repositorio)
 
 
-## Descripción y contexto
----
-Esto es un archivo README. Debe contener la documentación de soporte uso de la herramienta digital. Las siguientes secciones son las secciones recomendadas que debes poner incluir en cualquier herramienta digital. Puedes descargar este archivo para que te sirva como plantilla.
 
 Asegúrate de empezar este archivo con una breve descripción sobre las funcionalidades y contexto de la herramienta digital. Sé conciso y al grano.
 
