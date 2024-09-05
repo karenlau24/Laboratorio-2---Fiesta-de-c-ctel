@@ -132,6 +132,99 @@ snr_pum2 = calcular_snr(voz_filtrada_mejorada, pum2)
 snr_pam3 = calcular_snr(voz_filtrada_mejorada, pam3)
 ```
 
+### Paso 7: Análisis temporal
+
+```
+timepim = np.arange(0, len(pim)) / Fs1
+timepum = np.arange(0, len(pum)) / Fs2
+timepam= np.arange(0, len(pam)) / Fs3
+
+timepim1 = np.arange(0, len(pim1)) / Fr1
+timepum2 = np.arange(0, len(pum2)) / Fr2
+timepam3 = np.arange(0, len(pam3)) / Fr3
+
+plt.figure(figsize=(10, 6))
+
+plt.plot(timepim, pim, label='Voces Toma 1', color='pink')
+plt.plot(timepum, pum, label='Voces Toma 2', color='red')
+plt.plot(timepam, pam, label='Voces Toma 3', color='green')
+
+plt.plot(timepim1, pim1, label='Ruido Toma 1', color='blue')
+plt.plot(timepum2, pum2, label='Ruido Toma 2', color='brown')
+plt.plot(timepam3, pam3, label='Ruido Toma 3', color='white')
+
+plt.title("Análisis Temporal de Todas las Señales")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud [mV]")
+plt.legend()
+plt.show()
+```
+La gráfica presentada es la siguiente: 
+
+
+### Paso 8: Análisis espectral
+
+```
+N1 = len(timepim)
+T1 = 1.0 / Fs1
+
+N2 = len(timepum)
+T2 = 1.0 / Fs2
+
+N3 = len(timepam)
+T3 = 1.0 / Fs3
+
+Nr1 = len(timepim1)
+Tr1 = 1.0 / Fr1
+
+Nr2 = len(timepum2)
+Tr2 = 1.0 / Fr2
+
+Nr3 = len(timepam3)
+Tr3 = 1.0 / Fr3
+
+yf_pim= fft(pim)
+yf_pum = fft(pum)
+yf_pam = fft(pam)
+yf_pim1 = fft(pim1)
+yf_pum2 = fft(pum2)
+yf_pam3 = fft(pam3)
+
+xf_pim = fftfreq(N1, T1)[:N1//2]
+xf_pum = fftfreq(N2, T2)[:N2//2]
+xf_pam = fftfreq(N3, T3)[:N3//2]
+xf_pim1 = fftfreq(Nr1, Tr1)[:Nr1//2]
+xf_pum2 = fftfreq(Nr2, Tr2)[:Nr2//2]
+xf_pam3 = fftfreq(Nr3, Tr3)[:Nr3//2]
+
+plt.figure(figsize=(10, 6))
+
+plt.plot(xf_pim, 2.0/N1 * np.abs(yf_pim[:N1//2]), label='Voces Toma 1', color='blue')
+plt.plot(xf_pum, 2.0/N2 * np.abs(yf_pum[:N2//2]), label='Voces Toma 2', color='green')
+plt.plot(xf_pam, 2.0/N3 * np.abs(yf_pam[:N3//2]), label='Voces Toma 3', color='red')
+
+plt.plot(xf_pim1, 2.0/Nr1 * np.abs(yf_pim1[:Nr1//2]), label='Ruido Toma 1', color='orange')
+plt.plot(xf_pum2, 2.0/Nr2 * np.abs(yf_pum2[:Nr2//2]), label='Ruido Toma 2', color='yellow')
+plt.plot(xf_pam3, 2.0/Nr3 * np.abs(yf_pam3[:Nr3//2]), label='Ruido Toma 3', color='purple')
+
+plt.title("Análisis Espectral usando FFT de Todas las Señales")
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Amplitud [dB]")
+plt.legend()
+plt.show()
+```
+La gráfica realizada es la siguiente: 
+
+### Paso 7: Visualización de la voz filtrada
+
+```
+plt.figure(figsize=(12, 6))
+plt.plot(voz_filtrada_mejorada, color='violet')
+plt.legend()
+plt.title("Voz Filtrada usando ICA & Filtro Pasa Banda")
+```
+
+La gráfica de la voz filtrada es la siguiente: 
 
 
 
