@@ -1,7 +1,10 @@
 
 <h1 align="center">AISLAMIENTO DE VOZ ESPECIFICA EN AUDIO MIXTO</h1>
 <p align="center"> Problema:  Fiesta de cóctel</p>
-
+<br />
+<div align="center">
+ <img src="FIESTA.jpg" alt="Fiesta" width="250" height="250">
+</div>
 
 <br />
 <div align="center">
