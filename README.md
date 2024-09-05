@@ -1,4 +1,4 @@
-
+-*
 <h1 align="center">AISLAMIENTO DE VOZ ESPECIFICA EN AUDIO MIXTO</h1>
 
 <p align="center"> Problema:  Fiesta de cóctel</p>
@@ -23,7 +23,7 @@ y se encontraron con el problema de aislar la voz de interés.
 - [OBJETIVO](#objetivo)
 - [MONTAJE](#montaje)
 - [PROCESAMIENTO DE LAS SEÑALES](#procesamiento)
-- [Guía de instalación](#guía-de-instalación)
+- [ANÁLISIS DE RESULTADOS](#resultados)
 - [Cómo contribuir](#cómo-contribuir)
 - [Código de conducta](#código-de-conducta)
 - [Autor/es](#autores)
@@ -243,7 +243,7 @@ La gráfica de la voz filtrada es la siguiente:
 
 
  	
-## Guía de instalación
+## Resultados
 ---
 Paso a paso de cómo instalar la herramienta digital. En esta sección es recomendable explicar la arquitectura de carpetas y módulos que componen el sistema.
 
