@@ -7,7 +7,7 @@
  <img src="FIESTA.jpg" alt="Fiesta" width="300" height="300">
 </div>
 
----
+
 En un evento tipo coctel, se instalaron varios micrófonos para escuchar lo que
 las personas estaban hablando; una vez terminó la fiesta, se solicitó a los
 ingenieros que entregaran el audio de la voz de uno de los participantes.
