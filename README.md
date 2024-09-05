@@ -1,6 +1,7 @@
 
 <h1 align="center">AISLAMIENTO DE VOZ ESPECIFICA EN AUDIO MIXTO</h1>
 <p align="center"> Logo e imagen o gif de la interfaz principal de la herramienta</p>
+<img src="MONTAJE.jpeg" alt="Montaje" width="80" height="80">
 
 
 ## Tabla de contenidos:
