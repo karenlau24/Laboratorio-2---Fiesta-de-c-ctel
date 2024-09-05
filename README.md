@@ -67,6 +67,12 @@ pim1, Fr1 = sn.read('RUIDO_1.wav')
 pum2, Fr2 = sn.read('RUIDO_2.wav')
 pam3, Fr3 = sn.read('RUIDO_3.wav')
 ```
+### Paso 2: Mezclar las señales, para poder utilizar ICA
+
+```
+audio_mezclado = pim_recortado + pum_recortado + pam_recortado
+```
+
 
  	
 ## Guía de instalación
