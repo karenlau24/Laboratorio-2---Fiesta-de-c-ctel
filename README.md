@@ -245,6 +245,9 @@ La gráfica de la voz filtrada es la siguiente:
  	
 ## Resultados
 ---
+
+> Blockquotes
+
 Paso a paso de cómo instalar la herramienta digital. En esta sección es recomendable explicar la arquitectura de carpetas y módulos que componen el sistema.
 
 Según el tipo de herramienta digital, el nivel de complejidad puede variar. En algunas ocasiones puede ser necesario instalar componentes que tienen dependencia con la herramienta digital. Si este es el caso, añade también la siguiente sección.
