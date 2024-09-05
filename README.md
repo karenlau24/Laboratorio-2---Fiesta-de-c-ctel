@@ -22,7 +22,7 @@ y se encontraron con el problema de aislar la voz de interés.
 
 - [OBJETIVO](#objetivo)
 - [MONTAJE](#montaje)
-- [Guía de usuario](#guía-de-usuario)
+- PROCESAMIENTO DE LAS SEÑALES](#procesamiento)
 - [Guía de instalación](#guía-de-instalación)
 - [Cómo contribuir](#cómo-contribuir)
 - [Código de conducta](#código-de-conducta)
