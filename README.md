@@ -58,7 +58,8 @@ import soundfile as sn
 
 ...
 
-# Leer archivos de sonido
+#LEER LOS ARCHIVOS DE SONIDO
+
 pim, Fs1 = sn.read('AUDIO_1.wav')
 pum, Fs2 = sn.read('AUDIO_2.wav')
 pam, Fs3 = sn.read('AUDIO_3.wav')
