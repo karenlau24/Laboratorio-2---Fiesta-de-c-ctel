@@ -52,7 +52,7 @@ Se implementó un montaje en el que se utilizaron tres micrófonos con una frecu
 
 ## Procesamiento
 ---
-###### Paso 1: leer los audios en Python
+##### Paso 1: Leer los audios en Python
  	
 ## Guía de instalación
 ---
