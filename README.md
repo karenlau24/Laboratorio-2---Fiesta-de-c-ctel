@@ -161,6 +161,11 @@ plt.show()
 ```
 La gráfica presentada es la siguiente: 
 
+<br />
+<div align="center">
+ <img src="TEMPORAL.jpg" alt="Fiesta" width="300" height="300">
+</div>
+
 
 ### Paso 8: Análisis espectral
 
@@ -215,6 +220,11 @@ plt.show()
 ```
 La gráfica realizada es la siguiente: 
 
+<br />
+<div align="center">
+ <img src="ESPECTRAL.jpg" alt="Fiesta" width="300" height="300">
+</div>
+
 ### Paso 7: Visualización de la voz filtrada
 
 ```
@@ -226,6 +236,10 @@ plt.title("Voz Filtrada usando ICA & Filtro Pasa Banda")
 
 La gráfica de la voz filtrada es la siguiente: 
 
+<br />
+<div align="center">
+ <img src="VOZ.jpg" alt="Fiesta" width="300" height="300">
+</div>
 
 
  	
