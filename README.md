@@ -1,6 +1,6 @@
 
 <h1 align="center">AISLAMIENTO DE VOZ ESPECIFICA EN AUDIO MIXTO</h1>
-<p align="center"> Logo e imagen o gif de la interfaz principal de la herramienta</p>
+<p align="center"> Problema:  Fiesta de cóctel</p>
 
 
 <br />
