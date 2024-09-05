@@ -52,10 +52,9 @@ Se implementó un montaje en el que se utilizaron tres micrófonos con una frecu
 
 ## Procesamiento
 ---
-...
-hola
-
-...
+```
+Hola
+```
 
  	
 ## Guía de instalación
