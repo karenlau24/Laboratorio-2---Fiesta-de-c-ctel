@@ -13,7 +13,7 @@
 ## Tabla de contenidos:
 ---
 
-- [Badges o escudos](#badges-o-escudos)
+- [OBJETIVO]
 - [Descripción y contexto](#descripción-y-contexto)
 - [Guía de usuario](#guía-de-usuario)
 - [Guía de instalación](#guía-de-instalación)
