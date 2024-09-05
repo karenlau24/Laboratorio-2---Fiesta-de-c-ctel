@@ -13,7 +13,7 @@
 ## Tabla de contenidos:
 ---
 
-- [OBJETIVO]
+- [OBJETIVO](#objetivo)
 - [Descripción y contexto](#descripción-y-contexto)
 - [Guía de usuario](#guía-de-usuario)
 - [Guía de instalación](#guía-de-instalación)
