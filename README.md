@@ -3,7 +3,7 @@
 <p align="center"> Problema:  Fiesta de cóctel</p>
 <br />
 <div align="center">
- <img src="FIESTA.jpg" alt="Fiesta" width="250" height="250">
+ <img src="FIESTA.jpg" alt="Fiesta" width="300" height="300">
 </div>
 
 <br />
