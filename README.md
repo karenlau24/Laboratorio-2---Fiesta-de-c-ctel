@@ -5,7 +5,7 @@
 
 <br />
 <div align="center">
- <img src="MONTAJE.jpeg" alt="Montaje" width="80" height="80">
+ <img src="MONTAJE.jpeg" alt="Montaje" width="160" height="160">
 </div>
 
 
