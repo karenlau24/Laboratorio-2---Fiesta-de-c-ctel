@@ -78,6 +78,12 @@ audio_mezclado = pim_recortado + pum_recortado + pam_recortado
 ica = FastICA(n_components=3)
 sources = ica.fit_transform(audio_mezclado.reshape(-1, 1))
 ```
+### Paso 4: Seleccionar la fuente (voz) que se desea filtrar
+
+```
+voz_filtrada = sources[:, 0]
+```
+
 
 
  	
