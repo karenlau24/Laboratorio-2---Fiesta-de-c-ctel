@@ -74,7 +74,6 @@ audio_mezclado = pim_recortado + pum_recortado + pam_recortado
 ### Paso 3: Aplicar el ICA
 
 ```
-
 ica = FastICA(n_components=3)
 sources = ica.fit_transform(audio_mezclado.reshape(-1, 1))
 ```
@@ -87,7 +86,6 @@ voz_filtrada = sources[:, 0]
 ### Paso 5: Aplicar filtro pasabanda para mejorar la señal 
 
 ```
-
 def butter_bandpass(lowcut, highcut, fs, order=5):
     nyquist = 0.5 * fs
     low = lowcut / nyquist
@@ -109,6 +107,31 @@ voz_filtrada_mejorada /= np.max(np.abs(voz_filtrada_mejorada))
 
 sn.write('Vocecita.wav', voz_filtrada_mejorada, Fs1)
 ```
+
+### Paso 6: Calcular SNR 
+
+```
+def calcular_snr(signal, noise):
+    # Calcular la potencia de la señal
+    potencia_signal = np.mean(signal**2)
+    # Calcular la potencia del ruido
+    potencia_noise = np.mean(noise**2)
+    # Evitar división por cero
+    if potencia_noise == 0:
+        potencia_noise = np.finfo(float).eps
+    # Calcular SNR en decibelios
+    snr_db = 10 * np.log10(potencia_signal / potencia_noise)
+    return snr_db
+
+snr_pim = calcular_snr(pim, pim1)
+snr_pum = calcular_snr(pum, pum2)
+snr_pam = calcular_snr(pam, pam3)
+
+snr_pim1 = calcular_snr(voz_filtrada_mejorada, pim1)
+snr_pum2 = calcular_snr(voz_filtrada_mejorada, pum2)
+snr_pam3 = calcular_snr(voz_filtrada_mejorada, pam3)
+```
+
 
 
 
