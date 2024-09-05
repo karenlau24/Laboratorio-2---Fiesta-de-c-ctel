@@ -84,6 +84,32 @@ sources = ica.fit_transform(audio_mezclado.reshape(-1, 1))
 voz_filtrada = sources[:, 0]
 ```
 
+### Paso 5: Aplicar filtro pasabanda para mejorar la señal 
+
+```
+
+def butter_bandpass(lowcut, highcut, fs, order=5):
+    nyquist = 0.5 * fs
+    low = lowcut / nyquist
+    high = highcut / nyquist
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+
+def bandpass_filter(data, lowcut, highcut, fs, order=5):
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    y = lfilter(b, a, data)
+    return y
+
+lowcut = 1500.0  # Frecuencia mínima en Hz
+highcut = 3000.0  # Frecuencia máxima en Hz
+
+voz_filtrada_mejorada = bandpass_filter(voz_filtrada_recortada, lowcut, highcut, Fs1)
+
+voz_filtrada_mejorada /= np.max(np.abs(voz_filtrada_mejorada))
+
+sn.write('Vocecita.wav', voz_filtrada_mejorada, Fs1)
+```
+
 
 
  	
