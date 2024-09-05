@@ -58,8 +58,6 @@ import soundfile as sn
 
 ...
 
-# LEER LOS ARCHIVOS DE SONIDO
-
 pim, Fs1 = sn.read('AUDIO_1.wav')
 pum, Fs2 = sn.read('AUDIO_2.wav')
 pam, Fs3 = sn.read('AUDIO_3.wav')
@@ -76,7 +74,7 @@ audio_mezclado = pim_recortado + pum_recortado + pam_recortado
 ### Paso 3: Aplicar el ICA
 
 ```
-# Aplicación de ICA
+
 ica = FastICA(n_components=3)
 sources = ica.fit_transform(audio_mezclado.reshape(-1, 1))
 ```
