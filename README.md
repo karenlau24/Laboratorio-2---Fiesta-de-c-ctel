@@ -52,8 +52,17 @@ Se implementó un montaje en el que se utilizaron tres micrófonos con una frecu
 
 ## Procesamiento
 ---
+### Paso 1: Leer las señales de audio
 ```
-Hola
+import soundfile as sn
+...
+# Leer archivos de sonido
+pim, Fs1 = sn.read('AUDIO_1.wav')
+pum, Fs2 = sn.read('AUDIO_2.wav')
+pam, Fs3 = sn.read('AUDIO_3.wav')
+pim1, Fr1 = sn.read('RUIDO_1.wav')
+pum2, Fr2 = sn.read('RUIDO_2.wav')
+pam3, Fr3 = sn.read('RUIDO_3.wav')
 ```
 
  	
