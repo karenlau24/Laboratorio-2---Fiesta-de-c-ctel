@@ -163,7 +163,7 @@ La gráfica presentada es la siguiente:
 
 <br />
 <div align="center">
- <img src="TEMPORAL.jpg" alt="Fiesta" width="300" height="300">
+ <img src="TEMPORAL.png" alt="Fiesta" width="300" height="300">
 </div>
 
 
@@ -222,7 +222,7 @@ La gráfica realizada es la siguiente:
 
 <br />
 <div align="center">
- <img src="ESPECTRAL.jpg" alt="Fiesta" width="300" height="300">
+ <img src="ESPECTRAL.png" alt="Fiesta" width="300" height="300">
 </div>
 
 ### Paso 7: Visualización de la voz filtrada
@@ -238,7 +238,7 @@ La gráfica de la voz filtrada es la siguiente:
 
 <br />
 <div align="center">
- <img src="VOZ.jpg" alt="Fiesta" width="300" height="300">
+ <img src="VOZ.png" alt="Fiesta" width="300" height="300">
 </div>
 
 
